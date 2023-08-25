@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List, Tables, and Forms</title>
+    <style>
+        table{
+        border-bottom: 4px outset #2c2c2c;
+        border-right: 4px outset #2c2c2c;
+        border-left: 4px outset #d3d3d3;
+        border-top: 4px outset #d3d3d3;
+        border-spacing: 5px;
+        }
+        
+        td{
+        background-color: #48cdff;
+        border-bottom: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3;
+        border-left: 1px solid#2c2c2c;
+        border-top: 1px solid #2c2c2c;
+        padding-left: 10px;
+        }
+        
+        th {
+        
+        color:#f30000;
+        background-color:#feffaa;
+        border-bottom: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3;
+        border-left: 1px solid #2c2c2c;
+        border-top: 1px solid #2c2c2c;
+
+        
+        }
+
+      </style>
+  </head>
+  <body>
+    <form style="margin-top:100px;margin-left:425px;">
+      <table style="width:70%;">
+        <th colspan="2"><h1><b>Registration Form</b></h1></th>
+        <tr style="height:30px">
+            <td>Enter Name</td>
+            <td><input type="text" id="name" name="name" style="height:25px;"/><br /></td>
+        </tr> 
+        <tr>       
+          <td style="height:30px">Enter Password</td>
+          <td><input type="password" id="pass" name="pass" style="height:25px;" /><br /></td>
+        </tr>
+
+        <tr>
+            <td style="height:30px">Enter Address</td>
+            <td><textarea id="address" name="address" style="width: 200px; height: 50px"></textarea><br /></td>
+        </tr>
+        <tr>
+            <td>Select Game</td>
+            <td><input type="checkbox" id="hockey" name="Fav_game" value="Hockey" />
+                <b><label for="hockey">Hockey</label><br /></b>
+                <input type="checkbox" id="football" name="Fav_game" value="Football" />
+                <b><label for="football">Football</label><br /></b>
+                <input type="checkbox" id="badminton" name="Fav_game" value="Badminton" />
+                <b><label for="badminton">Badminton</label><br /></b>
+                <input type="checkbox" id="cricket" name="Fav_game" value="Cricket" />
+                <b><label for="cricket">Cricket</label><br /></b>
+                <input type="checkbox" id="volleyball" name="Fav_game" value="volleyball" />
+                <b><label for="volleyball">volleyball</label><br /></b>
+            </td>
+            
+        </tr>
+        <tr>
+            <td style="height:30px">Gender</td>
+            <td>
+                <input type="radio" id="gender_m" name="gender" />
+                <label for="gender_m">Male</label>
+                <input type="radio" id="gender_f" name="gender" />
+                <label for="gender_f">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="height:30px">Select your age</td>
+            <td>
+                <input type="number" style="width: 100px;" min="0" max="150" placeholder="Select"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="height:30px">Select Photo</td>
+            <td><input type="file"></td>
+        </tr>
+            <tr>
+                <td colspan="2"><h3>
+                    <div style="text-align: center;">
+                        <input type="button" onclick= "alert('Aint no way you clicked me.')" value="Click Me" style="width:150px; Height:50px;font-size: 20px;"/>
+                        <input type="reset" value="Reset" style="width:150px; Height:50px;font-size: 20px;"/>
+                        <input type="submit" value="Submit" style="width:150px; Height:50px;font-size: 20px;"/>
+                    </div>
+                </h3></td>
+            </tr>
+        
+      </table>
+    </form>
+  </body>
+</html>
